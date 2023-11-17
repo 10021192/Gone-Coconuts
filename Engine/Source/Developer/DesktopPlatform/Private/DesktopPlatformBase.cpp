@@ -145,7 +145,7 @@ bool FDesktopPlatformBase::GetEngineIdentifierFromRootDir(const FString &RootDir
 	// Find the label for the given directory
 	for (TMap<FString, FString>::TConstIterator Iter(Installations); Iter; ++Iter)
 	{
-		if (Iter->Value == NormalizedRootDir)
+		if (Iter->Value.Equals(NormalizedRootDir))
 		{
 			OutIdentifier = Iter->Key;
 			return true;
@@ -499,7 +499,7 @@ bool FDesktopPlatformBase::GetEngineIdentifierForProject(const FString& ProjectF
 	if(ProjectFile->TryGetStringField(TEXT("EngineVersion"), EngineVersionString) && EngineVersionString.Len() > 0)
 	{
 		FEngineVersion EngineVersion;
-		if(FEngineVersion::Parse(EngineVersionString, EngineVersion) && EngineVersion.HasChangelist() && EngineVersion.ToString(EVersionComponent::Minor) == TEXT("4.0"))
+		if(FEngineVersion::Parse(EngineVersionString, EngineVersion) && EngineVersion.HasChangelist() && EngineVersion.ToString(EVersionComponent::Minor).Equals(TEXT("4.0")))
 		{
 			OutIdentifier = TEXT("4.0");
 			return true;
