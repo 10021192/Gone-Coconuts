@@ -1,15 +1,8 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "",
+	"EngineAssociation": "{EF3C00D5-4716-6269-0ACC-1AB3213FED50}",
 	"Category": "",
 	"Description": "",
-	"Modules": [
-		{
-			"Name": "GoneCoconuts",
-			"Type": "Runtime",
-			"LoadingPhase": "Default"
-		}
-	],
 	"Plugins": [
 		{
 			"Name": "ModelingToolsEditorMode",
