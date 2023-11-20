@@ -3,6 +3,13 @@
 	"EngineAssociation": "",
 	"Category": "",
 	"Description": "",
+	"Modules": [
+		{
+			"Name": "GoneCoconuts",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
 	"Plugins": [
 		{
 			"Name": "ModelingToolsEditorMode",
