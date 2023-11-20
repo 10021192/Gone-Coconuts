@@ -9,7 +9,7 @@ public class GoneCoconutsEditorTarget : TargetRules
 	{
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_1;
+		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_2;
 		ExtraModuleNames.Add("GoneCoconuts");
 	}
 }
